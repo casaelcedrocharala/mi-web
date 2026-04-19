@@ -1054,6 +1054,29 @@ header {
 /* ==========================================
    Quienes Somos
    ========================================== */
+.separador-cedro {
+    margin-top: 60px;    /* Aumenta este número para bajarlo más */
+    margin-bottom: 40px; /* Espacio con lo que sigue abajo */
+    width: 60%;
+    border-bottom: 1px solid var(--color-acento);
+    position: relative;
+    margin-left: auto;   /* Estos dos mantienen el */
+    margin-right: auto;  /* separador centrado */
+}
+
+
+.separador-cedro::after {
+    content: '◆'; /* Puedes cambiarlo por un icono o una hoja */
+    color: var(--color-acento);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; /* O el color de fondo de tu web */
+    padding: 0 10px;
+}
+ 
+   
 .container-narrow {
     max-width: 800px;
     margin: 0 auto;
@@ -1066,7 +1089,17 @@ header {
     font-style: italic;
     color: var(--color-acento);
     line-height: 1.6;
+    text-align: center;
 }
+.lead-text-t {
+    font-size: 2.4rem;
+    font-family: var(--fuente-titulos);
+    font-style: italic;
+    color: var(--color-acento);
+    line-height: 1.6;
+    text-align: center;
+}
+
 
 .about-grid {
     display: grid;
