@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laguna Grande | Páramo de la Rusia | Casa El Cedro</title>
+    <meta name="description" content="Explora Laguna Grande en el Páramo de la Rusia. Una aventura de alta montaña a 3.700 msnm cerca de Charalá. Guía de senderismo y 4x4.">
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://casaelcedro.com/activities/laguna-grande">
+
+    <!-- Etiquetas de Idioma -->
+    <link rel="alternate" hreflang="es" href="https://casaelcedro.com/activities/laguna-grande" />
+    <link rel="alternate" hreflang="en" href="https://casaelcedro.com/activities/laguna-grande" />
+    <link rel="alternate" hreflang="de" href="https://casaelcedro.com/activities/laguna-grande" />
+    <link rel="alternate" hreflang="x-default" href="https://casaelcedro.com/activities/laguna-grande" />
+
+    <!-- Meta etiquetas para Facebook, Instagram y WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casaelcedro.com/activities/laguna-grande">
+    <meta property="og:title" content="Laguna Grande | Aventura en el Páramo de la Rusia">
+    <meta property="og:description" content="Descubre la inmensidad del páramo a 3.700 msnm. Una expedición de alta montaña única desde Casa El Cedro.">
+    <!-- Verifica el nombre de la imagen en tu carpeta -->
+    <meta property="og:image" content="https://casaelcedro.com/assets/actividades/laguna-grande-2.webp">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/actividades.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Ribera del Río Pienta",
+  "description": "Balneario natural de aguas frescas a pocos pasos de la casa. Relajación total.",
+  "location": { "@type": "Place", "name": "Charalá, Santander, Colombia" },
+  "url": "https://casaelcedro.com",
+  "image": "https://casaelcedro.com"
+}
+</script>
+
+</head>
+<body data-page-json="laguna-grande.json">
+    <!-- CABECERA -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (Ruta corregida con ../) -->
+            <a href="../index" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="../assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <span id="title">Casa El Cedro</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+
+            <!-- Enlaces del Nav (Rutas corregidas con ../) -->
+            <nav class="main-nav" id="main-nav">
+                <a href="../index" id="nav-home">Inicio</a>
+                <a href="../quienes-somos" id="nav-about">Quiénes Somos</a>
+                <a href="../actividades" id="nav-activities" class="active" aria-current="page">Actividades</a>
+                <a href="../contacto" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="../assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<main class="detalle-container">
+    <!-- Enlace atrás -->
+    <a href="../actividades.html" class="btn-back" id="back">← Volver a actividades</a>
+
+    <section class="hero-actividad">
+        <h1 id="act-title">Laguna Grande</h1>
+        <p class="act-intro" id="act-p1">
+            Ubicada en las cumbres del Páramo de la Rusia, a más de 3.500 msnm, Laguna Grande es un espejo de agua sagrado rodeado de frailejones y nacimientos de agua. Su paisaje ofrece una de las vistas más imponentes de la región, un escenario que transmite la fuerza y la pureza del páramo.
+        </p>
+        <p id="act-p2">
+            Para llegar, es necesario programar la salida desde muy temprano y contar con buen clima. El recorrido dura un poco más de dos horas pasando por El Encino, hasta alcanzar la parte más alta de la montaña, donde se deja el vehículo. Desde allí, se continúa a pie por un sendero de unos 3 km que conduce directamente a la laguna.
+        </p>
+        <p id="act-p3">
+            Debido a las condiciones propias del páramo, es fundamental llevar buena protección contra el frío, la humedad y el sol, garantizando así una experiencia segura y memorable en este entorno único.
+        </p>
+    </section>
+
+    <!-- Video de YouTube -->
+    <div class="video-wrapper">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/3UQvvHa9TGA" 
+            title="Laguna Grande" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <section class="info-tecnica">
+        <div class="datos-tecnicos">
+            <!-- Ubicación -->
+            <div class="dato-card">
+                <img src="../assets/icons/dificultad.svg" width="200" alt="Ubicación">
+                <h3 class="card-title" id="card-title-1">Ubicación</h3>
+                <p id="card-desc-1">Vía Charalá - Encino - Belén (Páramo de la Rusia). A unas 3 horas en vehículo desde Casa El Cedro.</p>
+            </div>
+
+            <!-- Altura -->
+            <div class="dato-card">
+                <img src="../assets/icons/altura.svg" width="200" alt="Altura">
+                <h3 class="card-title" id="card-title-2">Altura</h3>
+                <p id="card-desc-2">Se encuentra a aproximadamente 3.700 msnm. Prepárate para un clima frío y aire puro de montaña.</p>
+            </div>
+
+            <!-- Qué llevar -->
+            <div class="dato-card">
+                <img src="../assets/icons/backpack.svg" width="140" alt="Implementos">
+                <h3 class="card-title" id="card-title-3">Qué llevar</h3>
+                <p id="card-desc-3">Chaqueta impermeable, botas de montaña, guantes, protector solar, gafas y snacks energéticos.</p>
+            </div>
+
+            <!-- Senderismo -->
+            <div class="dato-card">
+                <img src="../assets/icons/implementos.svg" width="200" alt="Senderismo">
+                <h3 class="card-title" id="card-title-4">Senderismo</h3>
+                <p id="card-desc-4">Caminata de intensidad media-alta. El terreno puede ser húmedo y requiere buena condición física.</p>
+            </div>
+
+            <!-- 4x4 -->
+            <div class="dato-card">
+                <img src="../assets/icons/camper.svg" width="200" alt="campero">
+                <h3 class="card-title" id="card-title-5">Aventura en Campero 4x4</h3>
+                <p id="card-desc-5">Se llega por camino destapado entre el paisaje del páramo, luego se toma un sendero con guías expertos.</p>
+            </div>
+
+            <!-- Avistamiento -->
+            <div class="dato-card">
+                <img src="../assets/icons/avistamiento.svg" width="200" alt="Aves">
+                <h3 class="card-title" id="card-title-6">Avistamiento</h3>
+                <p id="card-desc-6">Observación de especies nativas. Se recomienda llevar binoculares.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="mapa">
+        <div class="mapa-especifico">
+            <h2 id="how-to-get">Cómo llegar</h2>
+            <div id="map-laguna-grande" class="mapa-fallas" style="height: 450px; width: 100%; position: relative;"></div>
+        </div>
+    </section>
+
+    <!-- Sugerencias -->
+    <section class="otros-sitios" style="margin-top: 50px; text-align: center;">
+        <h2 id="other-places">Explora más lugares</h2>
+        <div class="sugerencias-grid" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <a href="../actividades.html" class="btn-sobrio" id="back-1">← Volver a actividades</a>
+        </div>
+    </section>
+</main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">CASA EL CEDRO</h3>
+            <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+            <div class="footer-links">
+                <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+                <a href="tel:+573192261294">Teléfono</a>
+                <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Casa El Cedro. Charalá, Santander. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts con rutas corregidas -->
+    <script src="../js/actividades.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../js/mapas.js"></script>
+</body>
+</html>

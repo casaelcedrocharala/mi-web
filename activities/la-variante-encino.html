@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Variante | Cañón y Río Rojizo en Encino | Casa El Cedro</title>
+    <meta name="description" content="Descubre La Variante en el Encino, Santander. Un cañón surrealista con aguas rojizas y decks de madera. Guía de aventura 4x4, torrentismo y contacto natural.">
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://casaelcedro.com/activities/la-variante-encino">
+
+    <link rel="alternate" hreflang="es" href="https://casaelcedro.com/activities/la-variante-encino" />
+    <link rel="alternate" hreflang="en" href="https://casaelcedro.com/activities/la-variante-encino" />
+    <link rel="alternate" hreflang="de" href="https://casaelcedro.com/activities/la-variante-encino" />
+    <link rel="alternate" hreflang="x-default" href="https://casaelcedro.com/activities/la-variante-encino" />
+    <!-- Meta etiquetas para Facebook, Instagram y WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casaelcedro.com/activities/la-variante-encino">
+    <meta property="og:title" content="La Variante | Cañón de Aguas Rojizas en Encino">
+    <meta property="og:description" content="Aventura 4x4, rapel y naturaleza virgen en Santander. Reserva tu experiencia en Casa El Cedro.">
+    <meta property="og:image" content="https://casaelcedro.com/assets/actividades/variante-4.webp">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/actividades.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "La Variante - Cañón y Río Rojizo",
+  "description": "Cañón surrealista con aguas rojizas y decks de madera. Experiencia de aventura 4x4 y torrentismo.",
+  "location": { "@type": "Place", "name": "Encino, Santander, Colombia" },
+  "url": "https://casaelcedro.com",
+  "image": "https://casaelcedro.com"
+}
+</script>
+
+</head> 
+
+<body data-page-json="la-variante-encino.json">
+    <!-- CABECERA -->
+    <header>
+        <div class="header-container">
+            <!-- Logo (Ruta corregida con ../) -->
+            <a href="../index" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="../assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <span id="title">Casa El Cedro</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+
+            <!-- Enlaces del Nav (Rutas corregidas con ../) -->
+            <nav class="main-nav" id="main-nav">
+                <a href="../index" id="nav-home">Inicio</a>
+                <a href="../quienes-somos" id="nav-about">Quiénes Somos</a>
+                <a href="../actividades" id="nav-activities" class="active" aria-current="page">Actividades</a>
+                <a href="../contacto" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="../assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<main class="detalle-container">
+    <!-- Enlace atrás -->
+    <a href="../actividades" class="btn-back" id="back">← Volver a actividades</a>    
+    
+    <section class="hero-actividad">
+        <h1 id="act-title">La Variante</h1>
+        <p class="act-intro" id="act-p1">
+            Bajo el puente de concreto que conecta dos imponentes montañas, se esconde un secreto por descubrir. Olvida el ruido del camino y desciende al corazón del cañón: un sendero de madera serpentea entre rocas gigantes y acompaña las vibrantes aguas de un río de color rojizo, creando un escenario perfecto para perderse y encontrarse en medio de lo salvaje.
+        </p>
+
+        <p id="act-p2">
+            Para llegar, es necesario ir en vehículo 4x4. Tras pasar por El Encino, a unos 20 minutos, el camino conduce hasta este impresionante cañón de roca. Desde allí, se accede por un sendero que baja hasta la quebrada y desemboca en un hermoso deck de madera junto al río, donde la naturaleza se muestra en toda su fuerza y belleza.
+        </p>
+    </section>
+
+    <article class="actividad-item">
+         <div class="new-act-slider-container">
+                <div class="act-slider" id="slider-11">
+                    <img src="../assets/actividades/variante-1.webp" alt="deck de madera" class="act-slide active">
+                    <img src="../assets/actividades/variante-2.webp" alt="puente de concreto" class="act-slide">
+                    <img src="../assets/actividades/variante-3.webp" alt="puente de concreto en bosque" class="act-slide">
+                    <img src="../assets/actividades/variante-4.webp" alt="deck al lado del río" class="act-slide">
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide('slider-11', -1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide('slider-11', 1)">❯</button>
+            </div>
+    </article> 
+
+    <section class="info-tecnica">
+         <div class="datos-tecnicos">
+            <!-- Ubicación -->
+            <div class="dato-card">
+                <img src="../assets/icons/dificultad.svg" width="200" alt="Ubicación">
+                <h3 class="card-title" id="card-title-1">Ubicación</h3>
+                <p id="card-desc-1">A 1.5 hora y media desde la casa en 4x4 y 1860 msnm.</p>
+            </div>
+
+            <!-- Torrentismo -->
+            <div class="dato-card">
+                <img src="../assets/icons/torrentismo.svg" width="200" alt="Torrentismo">
+                <h3 class="card-title" id="card-title-2">Rapel</h3>
+                <p id="card-desc-2">Descenso de 50 metros por la pared de roca con equipo certificado y guías expertos.</p>
+            </div>
+
+            <!-- Qué llevar -->
+            <div class="dato-card">
+                <img src="../assets/icons/backpack.svg" width="140" alt="Implementos">
+                <h3 class="card-title" id="card-title-3">Qué llevar</h3>
+                <p id="card-desc-3">Calzado de buen agarre, repelente, bloqueador solar o parasol, traje de baño y tus snacks favoritos.</p>
+            </div>
+
+            <!-- Senderismo -->
+            <div class="dato-card">
+                <img src="../assets/icons/implementos.svg" width="200" alt="Senderismo">
+                <h3 class="card-title" id="card-title-4">Senderismo</h3>
+                <p id="card-desc-4">Este es un ecosistema protegido. Para mantener la pureza del agua y el entorno, promovemos un turismo de mínimo impacto y el respeto total por la fauna nativa.</p>
+            </div>
+
+            <!-- 4x4 -->
+            <div class="dato-card">
+                <img src="../assets/icons/camper.svg" width="200" alt="campero">
+                <h3 class="card-title" id="card-title-5">Aventura 4x4</h3>
+                <p id="card-desc-5">Acceso por vía destapada. Puedes optar por un recorrido en campero.</p>
+            </div>
+
+            <!-- Picnic -->
+            <div class="dato-card">
+                <img src="../assets/icons/picni.svg" width="200" alt="Picnic">
+                <h3 class="card-title" id="card-title-6">Picnic</h3>
+                <p id="card-desc-6">Un espacio natural e increíble junto a la orilla, perfecto para pasar el día y parchar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa">
+        <div class="mapa-especifico">
+          <h2 id="how-to-get">Cómo llegar</h2>
+          <div id="map-la-variante"></div>
+        </div>
+    </section>
+
+    <section class="otros-sitios" style="margin-top: 50px; text-align: center;">
+        <h2 id="other-places">Explora más lugares</h2>
+        <div class="sugerencias-grid" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <a href="../actividades" class="btn-sobrio" id="back-1">← Volver a actividades</a>
+        </div>
+    </section>
+</main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">CASA EL CEDRO</h3>
+            <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+            <div class="footer-links">
+                <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+                <a href="tel:+573192261294">Teléfono</a>
+                <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Casa El Cedro. Charalá, Santander. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts con rutas corregidas -->
+    <script src="../js/actividades.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../js/mapas.js"></script>
+</body>
+</html>
