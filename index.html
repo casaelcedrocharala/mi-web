@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel en Charalá, Santander | Casa El Cedro</title>
+        <!-- Meta Tags para Google y Redes Sociales (WhatsApp/Instagram/Facebook) -->
+    <meta name="description" content="Casa El Cedro: Tu refugio boutique en Charalá, Santander. Disfruta de la naturaleza y el confort en un entorno único.">
+
+    <!-- Open Graph / Facebook / Instagram / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casaelcedro.com">
+    <meta property="og:title" content="Casa El Cedro | Hotel Boutique en Charalá">
+    <meta property="og:description" content="Despierta con el canto de las aves y el aroma del cedro. Reserva tu estancia en el mejor clima de Santander.">
+    <meta property="og:image" content="https://casaelcedro.com/assets/img/foto1.jpg">
+
+    <!-- Imagen para WhatsApp (Debe ser cuadrada o 1200x630 para mejor resultado) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="description" content="Casa El Cedro, el mejor hospedaje y hotel boutique en Charalá, Santander. Conéctate con la naturaleza y vive una experiencia única en Colombia.">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/actividades.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Casa El Cedro",
+  "description": "Hotel boutique en Charalá, Santander.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vía Charalá-Duitama KM7, Vereda el Cedro",
+    "addressLocality": "Charalá",
+    "addressRegion": "Santander",
+    "addressCountry": "CO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "6.2974", 
+    "longitude": "-73.1678"
+  },
+  "url": "https://casaelcedro.com",
+  "telephone": "+573192261294",
+  "image": "https://casaelcedro.com/assets/img/foto1.jpg",
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "WiFi gratis", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Estacionamiento", "value": true }
+  ]
+}
+</script>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="header-container">
+            <!-- Logo Principal -->
+            <a href="/" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <h1 id="title">Casa El Cedro | Hotel en Charalá</h1>
+            </a>
+
+            <!-- Botón de Hamburguesa (Móviles) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navegación -->
+            <nav class="main-nav" id="main-nav">
+                <a href="index" id="nav-home" class="active" aria-current="page">Inicio</a>
+                <a href="quienes-somos" id="nav-about">Quiénes Somos</a>
+                <a href="actividades" id="nav-activities">Actividades</a>
+                <a href="contacto" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <!-- Selector de Idioma -->
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER PRINCIPAL -->
+    <div class="parallax-header">
+        <div class="slider-background"></div>
+        <div class="parallax-content">
+            <img src="assets/icons/logo-svg.svg" alt="Casa El Cedro Logo" class="hero-logo">
+            <h2 id="hero-title">Un lugar de paz en contacto con la naturaleza</h2>
+        </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2 id="services-title">Servicios de la casa</h2>
+        <div class="servicios-grid" id="services-grid">
+            <div class="servicio-item">
+                <img src="assets/icons/wi-fi.svg" alt="Wifi">
+                <p id="srv-wifi">Wifi</p>
+            </div>
+            <div class="servicio-item">
+                <img src="assets/icons/breakfast.svg" alt="Servicio de desayuno">
+                <p id="srv-breakfast">Servicio de desayuno</p>
+            </div>
+            <div class="servicio-item">
+                <img src="assets/icons/parking.svg" alt="Parqueadero">
+                <p id="srv-relax">Parqueadero</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE HABITACIONES -->
+    <section id="galeria">
+        <h2 id="gallery-title">Nuestras Habitaciones</h2>
+        <div class="galeria-grid">
+            <!-- Habitación 1 -->
+            <a href="../rooms/palo-de-agua" class="habitacion-card">
+                <img src="assets/img/palo-de-agua-1.webp" alt="Habitación Palo de Agua">
+                <div class="overlay">
+                    <span class="room-name">Palo de Agua</span>
+                </div>
+            </a>
+            <!-- Habitación 2 -->
+            <a href="../rooms/espada-san-jorge" class="habitacion-card">
+                <img src="assets/img/espada-san-jorge-1.webp" alt="Habitación Espada San Jorge">
+                <div class="overlay">
+                    <span class="room-name">Espada San Jorge</span>
+                </div>
+            </a>
+            <!-- Habitación 3 -->
+            <a href="en-construccion" class="habitacion-card">
+                <img src="assets/img/espada-san-jorge-2.webp" alt="Suite Principal">
+                <div class="overlay">
+                    <span class="room-name">Suite Principal</span>
+                </div>
+            </a>
+            <!-- Habitación 4 -->
+            <a href="en-construccion" class="habitacion-card">
+                <img src="assets/img/palo-de-agua-3.webp" alt="Habitación Familiar">
+                <div class="overlay">
+                    <span class="room-name">Habitación Familiar</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+<!-- EXPERIENCIAS -->
+<section class="info-tecnica">
+    <h2 id="activities-title">Experiencias Inolvidables</h2>
+    <div class="datos-tecnicos">
+        <!-- Rutas -->
+        <div class="dato-card">
+            <img src="../assets/icons/dificultad.svg" width="200" alt="Mapas">
+            <h3 class="card-title" id="exp-title-1">Rutas</h3>
+            <p id="exp-desc-1">Accede a guías y mapas detallados para descubrir cada rincón desde nuestra casa.</p>
+        </div>
+
+        <!-- Rivering -->
+        <div class="dato-card">
+            <img src="../assets/icons/rivering.svg" width="200" alt="Rivering">
+            <h3 class="card-title" id="exp-title-2">Rivering</h3>
+            <p id="exp-desc-2">Siente la adrenalina del río con guías expertos que te llevarán por rutas acuáticas únicas.</p>
+        </div>
+
+        <!-- Senderismo -->
+        <div class="dato-card">
+            <img src="../assets/icons/implementos.svg" width="200" alt="Senderismo">
+            <h3 class="card-title" id="exp-title-3">Senderismo</h3>
+            <p id="exp-desc-3">Recorre antiguos caminos veredales que conducen a paisajes paradisíacos y paz absoluta.</p>
+        </div>
+
+        <!-- 4x4 -->
+        <div class="dato-card">
+            <img src="../assets/icons/camper.svg" width="200" alt="campero">
+            <h3 class="card-title" id="exp-title-4">Aventura 4x4</h3>
+            <p id="exp-desc-4">Llega a donde pocos llegan. Agenda recorridos todoterreno por las montañas de la región.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- UBICACIÓN / MAPA FULL WIDTH -->
+    <section id="ubicacion-full">
+        <div class="map-header">
+            <h2 id="map-title">Nuestra Ubicación</h2>
+            <p>Charalá, Santander - Colombia</p>
+            <div class="cta-container">
+                <a href="como-llegar" class="btn-sobrio" id="nav-how-to-get">¿Cómo llegar?</a>
+            </div>
+        </div>
+        <!-- Contenedor del Mapa Leaflet -->
+        <div id="map"></div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">CASA EL CEDRO</h3>
+            <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+            <div class="footer-links">
+                <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+                <a href="tel:+573192261294">Teléfono</a>
+                <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Casa El Cedro. Charalá, Santander, COLOMBIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/message/TOPCBYBZ7C5AI1" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-text" id="whatsapp-msg">¿Necesitas ayuda?</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

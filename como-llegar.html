@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="02gcbGeFZYBcTJuZPvhrZjjMH9WnC_wZgdS1rSJtTlQ" />
+    <title>Cómo Llegar | Casa El Cedro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo Principal -->
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <h1 id="title">Casa El Cedro</h1>
+            </a>
+
+            <!-- Botón de Hamburguesa (Móviles) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navegación -->
+            <nav class="main-nav" id="main-nav">
+                <a href="index" id="nav-home">Inicio</a>
+                <a href="quienes-somos" id="nav-about">Quiénes Somos</a>
+                <a href="actividades" id="nav-activities">Actividades</a>
+                <a href="contacto" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <!-- Selector de Idioma -->
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="arrival-container">
+<section class="arrival-hero">
+    <h1 id="arrival-title">¿Cómo llegar a Charalá?</h1>
+    <p id="arrival-subtitle">
+        Queremos que tu viaje sea una experiencia tranquila y segura. Te recomendamos realizar tus compras y providencias en el casco urbano de Charalá antes de dirigirte al hotel. Nos encontramos a solo 7 km (aprox. 15 minutos) por la vía pavimentada que conduce hacia Encino - Duitama. Para brindarte la mejor bienvenida, por favor confímanos tu hora estimada de llegada; nuestro personal estará encantado de recibirte y ayudarte con tu acomodación.
+    </p>
+
+    <!-- Botón Mapa OpenStreetMap -->
+    <div style="margin-top: 20px;">
+        <div class="cta-container">
+        <a href="https://maps.app.goo.gl/ygx78ZnAhEmLwJXE8" class="btn-sobrio" id="nav-how-to-get"  target="_blank" 
+       rel="noopener noreferrer">Ver ubicación en el Mapa</a>
+        </div>
+    </div>
+</section>
+    <section class="route-section">
+            <h2 id="route-bga-title">Desde Bucaramanga</h2>
+            <div class="route-grid">
+                <div class="route-card">
+                    <h3 id="transport-car">🚗 En Carro Particular</h3>
+                    <p id="bga-desc">La distancia es de aproximadamente 140 km.</p>
+                    <ul>
+                        <strong>Ruta:</strong> Bucaramanga - Floridablanca - Piedecuesta - Pescadero - San Gil - Charalá.
+                    </ul>
+                </div>
+                <div class="route-card">
+                    <h3 id="transport-bus">🚌 En Transporte Público</h3>
+                    <p id="bga-price">Precio: Aproximadamente $33.000 COP.</p>
+                </div>
+            </div>
+    </section>
+    <section class="route-section">
+            <h2 id="route-bog-title">Desde Bogotá (Vía Principal)</h2>
+            <div class="route-grid">
+                <div class="route-card">
+                    <h3 id="transport-car-bog">🚗 En Carro Particular</h3>
+                    <p><strong>Ruta:</strong> Bogotá - Tunja - Barbosa - San Gil - Charalá.</p>
+                    <p id="bog-route-info">Distancia: Aprox. 310 km. Tiempo: 6-7 horas.</p>
+                    <p id="bog-route-warn"><em>Es la ruta más recomendada por seguridad y estado de la vía (100% pavimentada).</em></p>
+               </div>
+                <div class="route-card">
+                   <h3 id="transport-bus-bog">🚌 En Transporte Público</h3>
+                    <p id="bog-bus-desc">Desde la Terminal de Salitre o Norte, toma un bus hacia San Gil. En San Gil, toma una buseta en la terminal local hacia Charalá.</p>
+               </div>
+            </div>
+    </section>
+    <section class="route-section grey-bg">
+        <h2 id="route-adventure-title">Rutas de Aventura (Desde Boyacá)</h2>
+        <p id="adv-warn"><em>Aviso: Estas rutas incluyen tramos de vía destapada y paisajes de alta montaña. Se recomienda vehículo alto.</em></p>
+        <div class="route-grid">
+        <div class="route-card">
+            <h3 id="adv-virolin-title">🌲 Vía Duitama - Virolín</h3>
+            <p  id="vir-route-path"><strong>Ruta:</strong> Duitama - Palermo (Boyacá) - Virolín - Charalá.</p>
+            <p  id="vir-route-desc">Atraviesa el Santuario de Fauna y Flora Guanentá Alto Río Fonce. Es una ruta de gran belleza natural pero con terreno irregular.</p>
+        </div>
+        <div class="route-card">
+            <h3 id="dui-route-title">🏔️ Vía Duitama - Encino</h3>
+            <p id="enc-route-patc"><strong>Ruta:</strong> Duitama - Páramo de la Rusia - Encino - Charalá.</p>
+            <p id="enc-route-desc">Esta ruta te deja directamente en la vía que conduce a Casa El Cedro (a solo 7 km de Charalá). Verifica siempre el estado del clima antes de tomarla.</p>
+        </div>
+        </div>
+    </section>
+<section class="route-section grey-bg">
+    <h2 id="route-sangil-title">Desde San Gil (Punto de Conexión)</h2>
+    <p id="sangil-desc">Charalá se encuentra a solo 38 km de San Gil (aprox. 50 minutos de viaje).</p>
+
+    <div class="route-grid">
+        <!-- Transporte Público -->
+        <div class="route-card">
+            <h3 id="transport-bus-sangil">🚌 Transporte Público (Cootrasangil)</h3>
+            <p id="sangil-freq"><strong>Frecuencia:</strong> Salidas constantes de cada 1/2 hora desde el Terminalito o hoja de tabaco (San Gil).</p>
+            <p id="sangil-hours"><strong>Horarios:</strong> Desde las 6:00 am hasta las 6:00 pm.</p>
+            <p id="sangil-price"><strong>Precio:</strong> Aproximadamente $12.000 COP por persona.</p>
+        </div>
+
+        <!-- Taxi Local -->
+        <div class="route-card">
+            <h3 id="transport-taxi-charala">🚖 Taxi Charalá - Casa El Cedro</h3>
+            <p id="taxi-instruction">Una vez llegues al casco urbano de Charalá, puedes tomar un taxi hacia el hotel.</p>
+            <p id="taxi-distance"><strong>Distancia:</strong> 7 km (Vía pavimentada hacia Encino).</p>
+            <p id="taxi-avg-price"><strong>Precio promedio:</strong> $16.000 COP.</p>
+            <p id="taxi-notice"><em>*Recomendamos confirmar la tarifa con el conductor antes de iniciar el recorrido.</em></p>
+        </div>
+    </div>
+</section>
+
+       <section class="tips-section">
+    <h2 id="tips-title">Consejos para tu estancia</h2>
+    <ul class="tips-list">
+        <li id="tip-climate">☀️ Clima: Estamos en una zona de bosque húmedo tropical. El clima es variable y pueden presentarse lluvias repentinas.</li>
+        <li id="tip-clothing">🧥 Clothing: Recomendamos traer ropa cómoda, ligera y de secado rápido, además de calzado con buen agarre para las actividades naturales.</li>
+        <li id="tip-protection">🦟 Protección: No olvides usar repelente para insectos y bloqueador solar, incluso en días nublados.</li>
+        <li id="tip-environment">🌿 Entorno: Al estar rodeados de naturaleza, te sugerimos caminar siempre por los senderos indicados.</li>
+    </ul>
+  </section>
+   <section class="faq-section">
+        <h2 id="faq-title">Preguntas Frecuentes</h2>        
+        <div class="faq-item">
+            <h4 id="q1-title">📶 ¿Hay señal de celular?</h4>
+           <p id="q1-ans">La señal de celular es limitada para la mayoría de los operadores en la zona; sin embargo, para tu comodidad, <strong>    la casa ofrece conexión Wi-Fi</strong> para que permanezcas comunicado durante tu estancia.</p>
+        </div>
+
+
+        <div class="faq-item">
+            <h4 id="q2-title">💧 ¿El agua es potable?</h4>
+            <p id="q2-ans">Nuestra agua proviene de un <strong>acueducto rural de montaña</strong>. Si bien es agua pura de nacimiento natural, no cuenta con procesos de tratamiento industrial. Para tu tranquilidad y bienestar, en la casa <strong>ofrecemos agua apta para el      consumo humano</strong> durante tu estancia.</p>
+        </div>
+
+           <div class="faq-item">
+               <h4 id="q3-title">🐾 ¿Aceptan mascotas?</h4>
+                <p id="q3-ans">Sí, somos Pet-Friendly...</p>
+            </div>
+   </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <h3 class="footer-logo">CASA EL CEDRO</h3>
+        <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+        
+        <div class="footer-links">
+            <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+            <a href="tel:+573192261294">Teléfono</a>
+            <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+        </div>
+        
+        <div class="footer-copy">
+            <p>&copy; 2026 Casa El Cedro. Charalá,Santander, COLOMBIA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<a href="https://wa.me/message/TOPCBYBZ7C5AI1" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <!-- URL corregida para que cargue el icono real -->
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+    <span class="whatsapp-text" id="whatsapp-msg">¿Necesitas ayuda?</span>
+</a>
+<script src="js/script.js"></script>
+</body>
+</html>

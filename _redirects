@@ -1,0 +1,18 @@
+# 1. Forzar dominio principal y HTTPS
+http://casaelcedro.com*  https://casaelcedro.com/:splat  301!
+https://casa-el-cedro.netlify.app/*  https://casaelcedro.com/:splat  301!
+
+# 2. URLs de nivel superior (Páginas sueltas)
+/contacto          /contacto.html          200
+/quienes-somos     /quienes-somos.html     200
+/como-llegar       /como-llegar.html       200
+/activities        /activities.html        200
+
+# 3. Regla para las HABITACIONES (Carpeta /rooms/)
+/rooms/*           /rooms/:splat.html      200
+
+# 4. Regla para las ACTIVIDADES (Carpeta /activities/)
+/activities/*      /activities/:splat.html  200
+
+# 5. Manejo de errores (404)
+/*                 /en-construccion.html   404

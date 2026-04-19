@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Construcción | Casa El Cedro</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Tu CSS general -->
+    <link rel="stylesheet" href="css/construction.css"> <!-- El nuevo CSS -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <h1 id="title">Casa El Cedro</h1>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html" id="nav-home">Inicio</a>
+                <a href="quienes-somos.html" id="nav-about">Quiénes Somos</a>
+                <a href="actividades.html" id="nav-activities">Actividades</a>
+                <a href="contacto.html" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main class="construction-container">
+    <!-- SVG incrustado directamente (No falla nunca) -->
+    <svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://w3.org" class="construction-img">
+        <circle cx="200" cy="200" r="160" fill="#fcfcfc" stroke="#f0f0f0" stroke-width="2"/>
+        <path d="M150,210 L200,160 L250,210 L250,260 L150,260 Z" fill="none" stroke="#1a1a1a" stroke-width="4"/>
+        <rect x="185" y="205" width="30" height="30" fill="none" stroke="#a67c52" stroke-width="3">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+        </rect>
+        <text x="200" y="320" fill="#a67c52" font-family="Arial" font-size="16" text-anchor="middle">EN CONSTRUCCIÓN</text>
+    </svg>
+
+    <div class="construction-content">
+        ...
+    </div>
+</main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">CASA EL CEDRO</h3>
+            <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+            <div class="footer-links">
+                <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+                <a href="tel:+573192261294">Teléfono</a>
+                <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Casa El Cedro. Charalá, Santander, COLOMBIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp -->
+<a href="https://wa.me/message/TOPCBYBZ7C5AI1" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <!-- URL corregida para que cargue el icono real -->
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+    <span class="whatsapp-text" id="whatsapp-msg">¿Necesitas ayuda?</span>
+</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

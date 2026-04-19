@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Casa El Cedro</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo Principal -->
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <h1 id="title">Casa El Cedro</h1>
+            </a>
+
+            <!-- Botón de Hamburguesa (Móviles) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navegación -->
+            <nav class="main-nav" id="main-nav">
+                <a href="index" id="nav-home">Inicio</a>
+                <a href="quienes-somos" id="nav-about">Quiénes Somos</a>
+                <a href="actividades" id="nav-activities">Actividades</a>
+                <a href="contacto" id="nav-contact" class="active" aria-current="page">Contáctenos</a>
+            </nav>
+
+            <!-- Selector de Idioma -->
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contact-container">
+            <!-- Columna 1: Información -->
+            <div class="contact-info">
+                <h2 id="contact-title">Contactenos</h2>
+                <p>¿Tienes alguna duda sobre nuestras habitaciones o actividades? Estamos aquí para ayudarte a planear tu estadía perfecta en Charalá.</p>
+                
+                <div class="info-details">
+                    <p><strong>📍 Dirección:</strong> Charalá, Santander - Colombia</p>
+                    <p><strong>📞 Whatsapp/Telefono:</strong> (+57) 316 648 2127</p>
+                    <p><strong>📞 Whatsapp/Telefono:</strong> (+57) 319 226 1294</p>
+                    <p><strong>✉️ Email:</strong> casaelcedrocharala@gmail.com</p>
+                    <p><strong>⏰ Horario de atención:</strong> 8:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Columna 2: Formulario -->
+            <div class="contact-form">
+                <form action="https://formspree.io" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página (Igual al index) -->
+<footer class="main-footer">
+    <div class="footer-container">
+        <h3 class="footer-logo">CASA EL CEDRO</h3>
+        <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+        
+        <div class="footer-links">
+            <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+            <a href="tel:+573192261294">Teléfono</a>
+            <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+        </div>
+        
+        <div class="footer-copy">
+            <p>&copy; 2026 Casa El Cedro. Charalá,Santander, COLOMBIA. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<a href="https://wa.me/message/TOPCBYBZ7C5AI1" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+    <!-- URL corregida para que cargue el icono real -->
+    <img src="assets/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+    <span class="whatsapp-text" id="whatsapp-msg">¿Necesitas ayuda?</span>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

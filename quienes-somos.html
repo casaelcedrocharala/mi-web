@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | Casa El Cedro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header (Igual que en index) -->
+    <header>
+        <div class="header-container">
+            <!-- Logo Principal -->
+            <a href="index" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+                <span id="title">Casa El Cedro</span>
+            </a>
+
+            <!-- Botón de Hamburguesa (Móviles) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navegación -->
+            <nav class="main-nav" id="main-nav">
+                <a href="index" id="nav-home">Inicio</a>
+                <a href="quienes-somos" id="nav-about" class="active" aria-current="page">Quiénes Somos</a>
+                <a href="actividades" id="nav-activities">Actividades</a>
+                <a href="contacto" id="nav-contact">Contáctenos</a>
+            </nav>
+
+            <!-- Selector de Idioma -->
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn">
+                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                    <span id="current-lang">ES</span>
+                </button>
+                <div class="lang-content">
+                    <a href="#" onclick="changeLanguage('es')">Español</a>
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Banner de Sección -->
+    <div class="parallax-header about-banner">
+        <div class="parallax-content">
+            <h1 id="about-hero-title">Nuestra Historia</h1>
+        </div>
+    </div>
+
+<!-- BLOQUE: NUESTRA HISTORIA (Imagen a la izquierda, Texto a la derecha) -->
+<section class="about-intro">
+    <div class="container-narrow">
+        <p class="lead-text">
+            <strong id="about-lead">Ubicada en el corazón de Charalá, Santander, Casa El Cedro tiene el propósito de compartir la belleza de sus tierras con aquellos que buscan desconectarse.</strong>
+        </p>
+    </div>
+</section>
+
+<!-- BLOQUE: NUESTRA HISTORIA -->
+<section class="about-story">
+    <div class="about-grid">
+        <div class="about-image">
+            <img src="assets/img/familia.webp" alt="Fachada Casa El Cedro" id="about-img-alt">
+        </div>
+        <div class="about-text">
+            <h2 id="about-story-title">¿Quiénes somos?</h2>
+            <p id="about-story-p1">
+                Casa El Cedro nace del sueño de abrir sus puertas de un hogar que rinde homenaje a la arquitectura campesina tradicional y a la naturaleza. Somos una familia santandereana que cree profundamente en el valor de su tierra.
+            </p><br>
+
+            <p id="about-story-p2">
+                Con el paso de los años, lo que comenzó como un hogar familiar se ha transformado en una pequeña reserva natural. Al estar ubicados al borde del Río Pienta, hemos asumido la misión de proteger este ecosistema, convirtiéndolo en un corredor ecológico vital para las especies nativas. Hoy, Casa El Cedro es un refugio donde la fauna local, desde aves migratorias hasta pequeños mamíferos del bosque, encuentran un lugar seguro y protegido.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- BLOQUE: COMPROMISO -->
+<section class="about-commitment">
+    <div class="commitment-card">
+        <h2 id="about-commit-title">Nuestro Compromiso</h2>
+        <p id="about-commit-p1">
+           Ofrecer un turismo consciente que invita a sus huespedes a descubrir la riqueza de Santander y a integrarse con la cultura local y el ecosistema.
+        </p>
+    </div>
+</section>
+
+<section class="visual-legacy">
+    <div class="legacy-header">
+        <h2>Retratos de Nuestra Tierra</h2>
+        <p>Un recorrido visual por los colores, texturas y sabores que habitan nuestra tierra.</p>
+    </div>
+
+    <div class="legacy-container">
+        <!-- Repite este bloque para tus 14 imágenes -->
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos24.webp" alt="Mariposa azul">
+            <figcaption>Mariposa Morpho</figcaption>
+        </figure>
+
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos23.webp" alt="Cocina de Casa el Cedro">
+            <figcaption>Cocina de Casa el Cedro</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos22.webp" alt="Frailejones de paramo">
+            <figcaption>Páramo del alto río fonce</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos21.webp" alt="Valle del río Pienta">
+            <figcaption>  Valle del río Pienta</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos20.webp" alt="foto del la luna">
+            <figcaption>Día de verano</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos19.webp" alt="panes">
+            <figcaption>Cocina local</figcaptiwebp
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos18.webp" alt="comida campesina">
+            <figcaption>Cocina local</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos17.webp" alt="gente trabajando">
+            <figcaption>Trapiche Charalá,Santander</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos16.webp" alt="Herramientas del Trapiche">
+            <figcaption>Herramientas del Trapiche</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos15.webp" alt="hongo de madera">
+            <figcaption>Hongo de gelatina naranja</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos14.webp" alt="frailejones">
+            <figcaption>Páramo del Consuelo Belén, Boyacá</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos13.webp" alt="Paisaje de la Reserva Natural">
+            <figcaption>Laja de piedra natural Charalá, Santander</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos12.webp" alt="flor morada">
+            <figcaption>Flor jacinto de agua</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos11.webp" alt="orquideas amarillas">
+            <figcaption>Orquideas Casa el Cedro</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos10.webp" alt="Saturniidae">
+            <figcaption>Oruga Lonomia</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos9.webp" alt="Cocuyo">
+            <figcaption>Cocuyo</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos8.webp" alt="rana marron cutin">
+            <figcaption>Rana de lluvia</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos7.webp" alt="Cladonia">
+            <figcaption>Líquenes de cuerno</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos6.webp" alt="Plumeria">
+            <figcaption>Flor de Mayo</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos5.webp" alt="Paisaje de la Reserva Natural">
+            <figcaption>Rana de vidrio</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos4.webp" alt="Pitangus sulphuratus">
+            <figcaption>Bienteveo</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos3.webp" alt="Ortalis columbiana">
+            <figcaption>guacharaca colombiana</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos2.webp" alt="Mantis religiosa">
+            <figcaption>Mantis religiosa</figcaption>
+        </figure>
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos1.webp" alt="Rhetus arcius">
+            <figcaption>Mariposa cola de espada azul</figcaption>
+        </figure>
+
+        <figure class="legacy-item">
+            <img src="assets/img/galeria/quienes-somos0.webp" alt="Cafe colombiano">
+            <figcaption>Café seleccionado</figcaption>
+        </figure>
+        
+    </div>
+</section>
+
+    <!-- Footer (Igual que en index) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <h3 class="footer-logo">CASA EL CEDRO</h3>
+            <p class="footer-tagline">Un refugio de paz en contacto con la naturaleza.</p>
+            <div class="footer-links">
+                <a href="mailto:icasaelcedrocharala@gmail.com">Email</a>
+                <a href="tel:+573192261294">Teléfono</a>
+                <a href="https://www.instagram.com/casaelcedro/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Casa El Cedro. Charalá, Santander, COLOMBIA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
