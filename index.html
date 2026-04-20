@@ -58,54 +58,56 @@
 <body>
 
     <!-- CABECERA -->
-    <header>
-        <div class="header-container">
-            <!-- Logo Principal -->
-            <a href="/" class="logo-area" style="text-decoration: none; color: inherit;">
-                <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
-                <h1 id="title">Casa El Cedro | Hotel en Charalá</h1>
-            </a>
+<!-- CABECERA -->
+<header>
+    <div class="header-container">
+        <!-- Logo Principal -->
+        <a href="/" class="logo-area" style="text-decoration: none; color: inherit;">
+            <img src="assets/icons/logo-svg.svg" alt="Logo Casa El Cedro" class="nav-logo">
+            <h1 id="title">Casa El Cedro | Hotel en Charalá</h1>
+        </a>
 
-            <!-- Botón de Hamburguesa (Móviles) -->
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        <!-- Botón de Hamburguesa (Móviles) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Navegación -->
+        <nav class="main-nav" id="main-nav">
+            <a href="index" id="nav-home" class="active" aria-current="page">Inicio</a>
+            <a href="quienes-somos" id="nav-about">Quiénes Somos</a>
+            <a href="actividades" id="nav-activities">Actividades</a>
+            <a href="contacto" id="nav-contact">Contáctenos</a>
+        </nav>
+
+        <!-- Selector de Idioma -->
+        <div class="lang-dropdown">
+            <button class="lang-dropbtn">
+                <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
+                <span id="current-lang">ES</span>
             </button>
-
-            <!-- Navegación -->
-            <nav class="main-nav" id="main-nav">
-                <a href="index" id="nav-home" class="active" aria-current="page">Inicio</a>
-                <a href="quienes-somos" id="nav-about">Quiénes Somos</a>
-                <a href="actividades" id="nav-activities">Actividades</a>
-                <a href="contacto" id="nav-contact">Contáctenos</a>
-            </nav>
-
-            <!-- Selector de Idioma -->
-            <div class="lang-dropdown">
-                <button class="lang-dropbtn">
-                    <img src="assets/icons/idiomas.svg" alt="Idioma" width="30">
-                    <span id="current-lang">ES</span>
-                </button>
-                <div class="lang-content">
-                    <a href="#" onclick="changeLanguage('es')">Español</a>
-                    <a href="#" onclick="changeLanguage('en')">English</a>
-                    <a href="#" onclick="changeLanguage('de')">Deutsch</a>
-                </div>
+            <div class="lang-content">
+                <a href="#" onclick="changeLanguage('es')">Español</a>
+                <a href="#" onclick="changeLanguage('en')">English</a>
+                <a href="#" onclick="changeLanguage('de')">Deutsch</a>
             </div>
         </div>
-    </header>
-
-    <!-- HERO / BANNER PRINCIPAL -->
-    <div class="parallax-header">
-        <div class="slider-background"></div>
-        <div class="parallax-content">
-            <img src="assets/icons/logo-svg.svg" alt="Casa El Cedro Logo" class="hero-logo">
-            <h2 id="hero-title" class="lead-text-t">Naturaleza y Arquitectura en el Río Pienta</h2>
-        </div>
     </div>
+</header>
 
-<div class="container-narrow">
+<!-- HERO / BANNER PRINCIPAL -->
+<div class="parallax-header">
+    <div class="slider-background"></div>
+    <div class="parallax-content">
+        <img src="assets/icons/logo-svg.svg" alt="Casa El Cedro Logo" class="hero-logo">
+        <h2 id="hero-title" class="lead-text-t">Naturaleza y Arquitectura en el Río Pienta</h2>
+    </div>
+</div>
+
+<!-- INTRODUCCIÓN -->
+<section class="container-narrow">
     <p class="lead-text">
         <strong id="hero-description">
             Disfrute de una experiencia exclusiva en nuestro hotel boutique, un refugio de paz ubicado a las orillas de la rivera del río Pienta. Nuestra casa, fiel exponente de la arquitectura campesina local, se encuentra inmersa en una pequeña reserva de bosque nativo, ofreciendo un entorno natural inigualable. 
@@ -113,84 +115,65 @@
         </strong>
     </p>
     <div class="separador-cedro"></div>
-</div>
-
 </section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios">
-        <h2 lead-text-t id="services-title">Servicios de la casa</h2>
-        <div class="servicios-grid" id="services-grid">
-            <div class="servicio-item">
-                <img src="assets/icons/wi-fi.svg" alt="Wifi">
-                <p id="srv-wifi">Wifi</p>
-            </div>
-            <div class="servicio-item">
-                <img src="assets/icons/breakfast.svg" alt="Servicio de desayuno">
-                <p id="srv-breakfast">Servicio de desayuno</p>
-            </div>
-            <div class="servicio-item">
-                <img src="assets/icons/parking.svg" alt="Parqueadero">
-                <p id="srv-relax">Parqueadero</p>
-            </div>
+<!-- SERVICIOS -->
+<section id="servicios">
+    <h2 id="services-title">Servicios de la casa</h2>
+    <div class="servicios-grid" id="services-grid">
+        <div class="servicio-item">
+            <img src="assets/icons/wi-fi.svg" alt="Wifi">
+            <p id="srv-wifi">Wifi</p>
         </div>
-    </section>
-
-    <!-- GALERÍA DE HABITACIONES -->
-    <section id="galeria">
-        <h2 id="gallery-title">Nuestras Habitaciones</h2>
-        <div class="galeria-grid">
-            <!-- Habitación 1 -->
-            <a href="../rooms/palo-de-agua" class="habitacion-card">
-                <img src="assets/img/palo-de-agua-1.webp" alt="Habitación Palo de Agua">
-                <div class="overlay">
-                    <span class="room-name">Palo de Agua</span>
-                </div>
-            </a>
-            <!-- Habitación 2 -->
-            <a href="../rooms/espada-san-jorge" class="habitacion-card">
-                <img src="assets/img/espada-san-jorge-1.webp" alt="Habitación Espada San Jorge">
-                <div class="overlay">
-                    <span class="room-name">Espada San Jorge</span>
-                </div>
-            </a>
-            <!-- Habitación 3 -->
-            <a href="en-construccion" class="habitacion-card">
-                <img src="assets/img/espada-san-jorge-2.webp" alt="Suite Principal">
-                <div class="overlay">
-                    <span class="room-name">Suite Familiar</span>
-                </div>
-            </a>
-
+        <div class="servicio-item">
+            <img src="assets/icons/breakfast.svg" alt="Servicio de desayuno">
+            <p id="srv-breakfast">Servicio de desayuno</p>
         </div>
-    </section>
+        <div class="servicio-item">
+            <img src="assets/icons/parking.svg" alt="Parqueadero">
+            <p id="srv-relax">Parqueadero</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALERÍA DE HABITACIONES -->
+<section id="galeria">
+    <h2 id="gallery-title">Nuestras Habitaciones</h2>
+    <div class="galeria-grid">
+        <a href="../rooms/palo-de-agua" class="habitacion-card">
+            <img src="assets/img/palo-de-agua-1.webp" alt="Habitación Palo de Agua">
+            <div class="overlay"><span class="room-name">Palo de Agua</span></div>
+        </a>
+        <a href="../rooms/espada-san-jorge" class="habitacion-card">
+            <img src="assets/img/espada-san-jorge-1.webp" alt="Habitación Espada San Jorge">
+            <div class="overlay"><span class="room-name">Espada San Jorge</span></div>
+        </a>
+        <a href="en-construccion" class="habitacion-card">
+            <img src="assets/img/espada-san-jorge-2.webp" alt="Suite Principal">
+            <div class="overlay"><span class="room-name">Suite Familiar</span></div>
+        </a>
+    </div>
+</section>
     
 <!-- EXPERIENCIAS -->
 <section class="info-tecnica">
     <h2 id="activities-title">Experiencias Inolvidables</h2>
     <div class="datos-tecnicos">
-        <!-- Rutas -->
         <div class="dato-card">
             <img src="../assets/icons/dificultad.svg" width="200" alt="Mapas">
             <h3 class="card-title" id="exp-title-1">Rutas</h3>
             <p id="exp-desc-1">Accede a guías y mapas detallados para descubrir cada rincón desde nuestra casa.</p>
         </div>
-
-        <!-- Rivering -->
         <div class="dato-card">
             <img src="../assets/icons/rivering.svg" width="200" alt="Rivering">
             <h3 class="card-title" id="exp-title-2">Rivering</h3>
             <p id="exp-desc-2">Siente la adrenalina del río con guías expertos que te llevarán por rutas acuáticas únicas.</p>
         </div>
-
-        <!-- Senderismo -->
         <div class="dato-card">
             <img src="../assets/icons/implementos.svg" width="200" alt="Senderismo">
             <h3 class="card-title" id="exp-title-3">Senderismo</h3>
             <p id="exp-desc-3">Recorre antiguos caminos veredales que conducen a paisajes paradisíacos y paz absoluta.</p>
         </div>
-
-        <!-- 4x4 -->
         <div class="dato-card">
             <img src="../assets/icons/camper.svg" width="200" alt="campero">
             <h3 class="card-title" id="exp-title-4">Aventura 4x4</h3>
@@ -199,18 +182,18 @@
     </div>
 </section>
 
-    <!-- UBICACIÓN / MAPA FULL WIDTH -->
-    <section id="ubicacion-full">
-        <div class="map-header">
-            <h2 id="map-title">Nuestra Ubicación</h2>
-            <p>Charalá, Santander - Colombia</p>
-            <div class="cta-container">
-                <a href="como-llegar" class="btn-sobrio" id="nav-how-to-get">¿Cómo llegar?</a>
-            </div>
+<!-- UBICACIÓN / MAPA FULL WIDTH -->
+<section id="ubicacion-full">
+    <div class="map-header">
+        <h2 id="map-title">Nuestra Ubicación</h2>
+        <p>Charalá, Santander - Colombia</p>
+        <div class="cta-container">
+            <a href="como-llegar" class="btn-sobrio" id="nav-how-to-get">¿Cómo llegar?</a>
         </div>
-        <!-- Contenedor del Mapa Leaflet -->
-        <div id="map"></div>
-    </section>
+    </div>
+    <div id="map"></div>
+</section>
+
 
     <!-- PIE DE PÁGINA -->
     <footer class="main-footer">
